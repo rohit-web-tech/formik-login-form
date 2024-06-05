@@ -58,12 +58,12 @@ const App = () => {
             </div>
             <div className="input-feild">
               <label htmlFor="email">Email *</label>
-              <Field innerRef={(el)=>inputRefs.current.email=el} type="email" name="email" className={errors.name && touched.name ? 'error' : ''}/>
+              <Field innerRef={(el)=>inputRefs.current.email=el} type="email" name="email" className={errors.email && touched.email ? 'error' : ''}/>
               <ErrorMessage name="email" component="div" />
             </div>
             <div className="input-feild">
               <label htmlFor="password">Password *</label>
-              <Field innerRef={(el)=>inputRefs.current.password=el} type="password" name="password" className={errors.name && touched.name ? 'error' : ''}/>
+              <Field innerRef={(el)=>inputRefs.current.password=el} type="password" name="password" className={errors.password && touched.password ? 'error' : ''}/>
               <ErrorMessage name="password" component="div" />
             </div>
             <div className="input-feild">
